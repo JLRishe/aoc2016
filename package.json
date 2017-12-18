@@ -1,0 +1,25 @@
+{
+  "name": "aoc2016",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "runday": "node -e \"require('aoc-runner').runSolution(process.argv[1])\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JLRishe/aoc2016.git"
+  },
+  "author": "James Rishe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JLRishe/aoc2016/issues"
+  },
+  "homepage": "https://github.com/JLRishe/aoc2016#readme",
+  "dependencies": {
+    "aoc-helpers": "file:..\\aoc-helpers",
+    "aoc-runner": "file:..\\aoc-runner",
+    "ramda": "^0.25.0"
+  }
+}
