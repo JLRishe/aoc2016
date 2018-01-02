@@ -4,7 +4,9 @@ const { probe } = require('aoc-helpers');
 
 // Key is String | Number
 // Move is (Key -> Key)
+// Direction is 'U' | 'D' | 'L' | 'R'
 
+// { Direction: Move }
 const moveMap = {
     U: when(gt(__, 3), subtract(__, 3)),
     D: when(lt(__, 7), add(3)),
@@ -44,6 +46,7 @@ const p1 = pressCode(moveMap);
 // { Key: Key } -> Key -> Key
 const fancyMove = transitions => c => transitions[c] || c;
 
+// { Direction: Move }
 const fancyMoveMap = {
     U: fancyMove({ '3': '1', '6': '2', '7': '3', '8': '4', 'A': '6', 'B': '7', 'C': '8', 'D': 'B' }),
     D: fancyMove({ '1': '3', '2': '6', '3': '7', '4': '8', '6': 'A', '7': 'B', '8': 'C', 'B': 'D' }),
